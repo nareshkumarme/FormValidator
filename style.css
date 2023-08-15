@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+:root{
+    --success-color:green;
+    --error-color:rgb(234, 73, 73);
+}
+
+*{
+    /* Box sizing will help that does not effect the padding on elements */
+    box-sizing: border-box;
+    
+}
+
+body{
+    background-color: aliceblue;
+    font-family:'open-sans',sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 50vh;
+}
+
+/* The box-shadow CSS property adds shadow effects around an element's frame. You can set multiple effects separated by commas. A box shadow is described by X and Y offsets relative to the element, blur and spread radius, and color. */
+
+.container{
+    border-color: whitesmoke;
+    border-radius: 5px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    width: 400px ;
+    background-color: rgb(235, 140, 140);
+}
+
+form{
+    padding: 20px 40px;
+    display: grid;
+    
+}
+.form-control{
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.form-control lable{
+    color:#777;
+    display: block;
+    margin-bottom: 5px;
+
+}
+.form-control input{
+    border: 2px solid white;
+    border-radius: 4px;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+   
+}
+
+.form-control input:focus{
+    outline: 0;
+    border-color: #777;
+}
+
+.form-control.success input{
+    border-color: var(--success-color);
+}
+
+.form-control.error input{
+    border-color: var(--error-color);
+}
+
+.form-control small{
+    color:var(--error-color);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    visibility: hidden;
+
+}
+
+.form-control.error small{
+    visibility: visible;
+}
+
+.container button{
+    cursor: pointer;
+    background-color:rgb(139, 139, 232);
+    color: white;
+    outline: 0;
+    border-radius: 2px;
+    display: block;
+    padding:10px;
+    width: 100%;
+
+}
+
+
+
+
+
+
+
